@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "d6ca684f-e226-4690-9151-d8e626058d2b",
+		"name": "DevOps Hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28297442"
+	},
+	"item": [
+		{
+			"name": "node 2 : redis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/photos/"
+			},
+			"response": []
+		},
+		{
+			"name": "postgres get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:7001/pg/all"
+			},
+			"response": []
+		},
+		{
+			"name": "postgres add a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"NixoN Deb\",\n    \"phone\": \"01717569175\",\n    \"count\" : 2\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:7001/pg/add"
+			},
+			"response": []
+		},
+		{
+			"name": "postgress table setup",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:7001/pg/setup"
+			},
+			"response": []
+		},
+		{
+			"name": "mongo get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:7001/mongo/all"
+			},
+			"response": []
+		},
+		{
+			"name": "mongo add a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Shawon Majid\",\n    \"phone\": \"01729379229\",\n    \"count\" : 1\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:7001/mongo/add"
+			},
+			"response": []
+		},
+		{
+			"name": "mysql get all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:7001/mysql/all"
+			},
+			"response": []
+		},
+		{
+			"name": "mysql table setup",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:7001/mysql/setup"
+			},
+			"response": []
+		},
+		{
+			"name": "mysql add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Shawon Majid\",\n    \"phone\": \"01729379229\",\n    \"count\" : 1\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:7001/mysql/add"
+			},
+			"response": []
+		},
+		{
+			"name": "node 1 redis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:7001/node2/photos/"
+			},
+			"response": []
+		}
+	]
+}
